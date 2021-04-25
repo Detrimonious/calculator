@@ -3,31 +3,35 @@
     <head>
         <meta charset="utf-8" />
         <title>Calculator</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-        <!--maybe use grid-->
+        <div id="webTitle">CALCULATOR</div>
         <div id="calculator">
             <div id="solution">0</div>
-            <div class="top-row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-            </div>
-            <div class="middle-row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-            </div>
-            <div class="bottom-row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-            </div>
-            <div class="lowest-row">
-                <button>0</button>
-                <button>.</button>
-                <button>=</button>
+            <div id="numbers">
+                <div class="top-row">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                </div>
+                <div class="middle-row">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                </div>
+                <div class="bottom-row">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                </div>
+                <div class="lowest-row">
+                    <button>0</button>
+                    <button>.</button>
+                    <button>=</button>
+                </div>
             </div>
             <div class="operators">
                 <button>+</button>
@@ -35,8 +39,8 @@
                 <button>*</button>
                 <button>/</button>
             </div>
-            <button class="clear">Clear</button>
         </div>
+        <button class="clear">Clear</button>
 
         <script type="text/javascript" src="script.js"></script>
     </body>

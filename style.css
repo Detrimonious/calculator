@@ -1,0 +1,48 @@
+body{
+    display: grid;
+    grid-template-areas: ". title ."
+                        ". calculator ."
+                        ". clear .";
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#webTitle{
+    grid-area: title;
+    font-size: 30px;
+    text-align: center;
+}
+
+#calculator{
+    grid-area: calculator;
+    display: grid;
+    grid-template-areas: "solution solution"
+                        "numerals operators"
+                        "numerals operators"
+                        "numerals operators"
+                        "numerals operators";
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 3fr 1fr;
+}
+
+#calculator button{
+    width: 120px;
+    height: 100px;
+}
+
+#solution{
+    grid-area: solution;
+    background-color: rgb(224, 240, 245);
+}
+
+#numbers{
+    grid-area: numerals;
+}
+
+.operators{
+    grid-area: operators;
+}
+
+.clear{
+    grid-area: clear;
+}
